@@ -47,8 +47,8 @@ function createMap() {
         // console.log(found)
         tooltip.style("opacity", 1)
         tooltip.html(found.area_name + ", " + found.state + " " + found.bachelorsOrHigher + "%")
-        tooltip.style("left", event.clientX - windowWidth/4 + 385 + "px")
-        tooltip.style("top", event.clientY - 30 + "px")
+        tooltip.style("left", event.pageX + 40 + "px")
+        tooltip.style("top", event.pageY + 0 + "px")
         tooltip.style("color", "black")
     })
     .on("mouseout", function(event, d) {
